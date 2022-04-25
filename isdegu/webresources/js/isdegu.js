@@ -33,15 +33,15 @@ document.addEventListener("DOMContentLoaded", function() {
     );
   });
   
-  // When the user scrolls down 20px from the top of the document, show the scroll up button
-  window.onscroll = function() {
-    scrollFunction();
-  };
+  // // When the user scrolls down 20px from the top of the document, show the scroll up button
+  // window.onscroll = function() {
+  //   scrollFunction();
+  // };
   
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("toTop").style.display = "block";
-    } else {
-      document.getElementById("toTop").style.display = "none";
-    }
-  }
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //     document.getElementById("toTop").style.display = "block";
+  //   } else {
+  //     document.getElementById("toTop").style.display = "none";
+  //   }
+  // }

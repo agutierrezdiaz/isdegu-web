@@ -17,42 +17,66 @@ html {
   justify-content: center;
 }
 
-.header-wrapper {
+/* .header-wrapper {
   padding-bottom: 30px;
+} */
+
+.is-flex-center {
+  display: flex;
+  align-items: center;
 }
 
 .hero {
-  background-image: url(../images/fire-protection-3593033_1920B.jpg);
-  background: linear-gradient(rgba(1, 4, 26, 0.65), rgba(11, 15, 27, 0.65)), rgba(0, 2, 31, 0.55) url("../images/fire-protection-3593033_1920B.jpg") no-repeat;
+  background-image: url(../images/modern-6528732_1280.png);
+  background: linear-gradient(rgba(37, 37, 37, 0.6), rgba(13, 13, 29, 0.6)), rgba(59, 12, 12, 0.5) url("../images/ocean-g3bfc34c0a_1920.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: var(--white);
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .hero .title {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   color: var(--white);
-  font-weight: bold;
-  font-weight: bold;
-}
-
-.hero .title span {
-  font-weight: normal;
-  font-size: 3rem;
-  color: var(--white);
+  font-weight: 500;
 }
 
 .hero .subtitle {
+  font-size: 1.5rem;
   padding: 5px;
   color: var(--white);
 }
 
+.is-header-text {
+  margin-top: 10px;
+  width: fit-content;
+  font-weight: bolder;
+}
+
+.is-header-text #isdegu-logo {
+  width: 4rem;
+  margin-right: 0.25rem;
+}
+
+.is-header-text .title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.is-header-text .title span {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.is-main-title {
+  padding: 0rem 5rem;
+}
+
 .hero .hero-foot {
   height: 50px;
-  background: var(--white);
+  background: var(--redISDEGU);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
 }
 
@@ -82,23 +106,23 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-  border-bottom: 2px solid var(--redISDEGU);
+  border-bottom: 2px solid var(--white);
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-  color: var(--redISDEGU);
+  color: var(--white);
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
-  color: var(--redISDEGU);
+  color: var(--orange);
   transition: all .2s ease-in-out;
-  border-bottom: 2px solid var(--redISDEGU);
+  border-bottom: 2px solid var(--orange);
 }
 
 .main-content {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   color: var(--lightblue);
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .main-content .section-dark {
@@ -134,11 +158,7 @@ html {
 }
 
 .main-content .section-light {
-  padding: 30px;
-}
-
-.main-content .section-light.about-us {
-  padding-bottom: 100px;
+  padding: 9rem;
 }
 
 .main-content .section-light.about-us .is-larger {
@@ -174,7 +194,7 @@ html {
   height: 50px;
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 @media (max-width: 599px) {
@@ -186,7 +206,7 @@ html {
 .main-content .section-title {
   color: var(--bluegray);
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   letter-spacing: 2px;
   padding-bottom: 30px;
 }
@@ -231,21 +251,39 @@ html {
 .white
 {color:var(--white)}
 
-#quality {
-  background: url(../images/corridor-ge53fb3da3_1920.jpg);
-  background: linear-gradient(rgba(43, 24, 24, 0.65), rgba(20, 8, 8, 0.65)), rgba(41, 39, 39, 0.55) url("../images/corridor-ge53fb3da3_1920.jpg") no-repeat;
+.main-content .services {
+}
+
+.main-content .services .card-image:first-child img {
+  object-fit: cover;
+}
+
+.main-content .services .card-content {
+  text-align: center;
+}
+
+#clinic {
+  background: url(../images/concern-gb800463ba_1920.jpg);
+  background: linear-gradient(rgba(43, 24, 24, 0.65), rgba(20, 8, 8, 0.65)), rgba(41, 39, 39, 0.55) url("../images/concern-gb800463ba_1920.jpg") no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  padding: 6rem;
 }
 
-#quality .section-title {
+#clinic .section-title {
   color: var(--white);
 }
 
-#quality .subtitle {
+#clinic .subtitle {
   color: var(--white);
+}
+
+#fire {
+  background: url(../images/fire-protection-3593033_1920B.jpg);
+  background: linear-gradient(rgba(43, 24, 24, 0.65), rgba(20, 8, 8, 0.65)), rgba(41, 39, 39, 0.55) url("../images/fire-protection-3593033_1920B.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
