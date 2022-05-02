@@ -321,6 +321,21 @@ html {
   background-size: cover;
 }
 
+#contact {
+  background: url(../images/workspace-ge51cada1f_1920.jpg);
+  background: linear-gradient(rgba(63, 67, 73, 0.65), rgba(14, 8, 8, 0.65)), rgba(41, 39, 39, 0.55) url("../images/workspace-ge51cada1f_1920.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact .contact-link {
+  font-size: 3rem;
+  color: var(--orange);
+  margin-left: 2rem;
+}
+
 @media (max-width: 599px) {
   .main-content .section-light {
     padding: 1rem;
@@ -354,6 +369,15 @@ html {
 
   #veterinary {
     padding: 2rem 0rem;
+  }
+
+  #contact {
+    text-align: center;
+  }
+
+  #contact .contact-link {
+    font-size: 2rem;
+    margin-left: 0px;
   }
 
 }
@@ -407,13 +431,11 @@ html {
 .footer {
   bottom: 0;
   width: 100vw;
-  padding: 0;
   height: 80px;
   line-height: 25px;
   text-align: center;
   background: var(--redISDEGU);
   color: var(--white);
-  padding-top: 2rem;
 }
 
 .footer a {
@@ -428,4 +450,16 @@ html {
 
 .footer a .nav-item {
   color: var(--white);
+}
+
+.breadcrumb {
+  padding: 2rem;
+}
+
+.breadcrumb a {
+  color: var(--redISDEGU)
+}
+
+.main-content .section-light.catalog {
+  padding: 0rem 9rem 9rem 9rem;
 }
