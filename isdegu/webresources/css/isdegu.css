@@ -436,6 +436,7 @@ html {
   text-align: center;
   background: var(--redISDEGU);
   color: var(--white);
+  padding: 2rem 1.5rem 2rem;
 }
 
 .footer a {
@@ -452,6 +453,12 @@ html {
   color: var(--white);
 }
 
+@media (max-width: 599px) {
+  .footer {
+    padding: 3rem 1.5rem 6rem;
+  }
+}
+
 .breadcrumb {
   padding: 2rem;
 }
@@ -462,4 +469,32 @@ html {
 
 .main-content .section-light.catalog {
   padding: 0rem 9rem 9rem 9rem;
+}
+
+.main-content .catalog .card {
+  background-color: var(--redISDEGU);
+  color: var(--white);
+}
+
+.main-content .catalog .card strong {
+  color: var(--white);
+}
+
+.main-content .catalog .card-image:first-child img {
+  object-fit: cover;
+}
+
+.main-content .catalog .card-content {
+  text-align: center;
+}
+
+.main-content .catalog .card-content .content {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+  .main-content .section-light.catalog {
+    padding: 0rem 1rem 1rem 1rem;
+  }
 }
