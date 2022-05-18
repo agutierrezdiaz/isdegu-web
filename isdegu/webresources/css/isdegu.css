@@ -166,6 +166,22 @@ html {
   font-size: 5rem;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1215px) {
+  .is-header-text #isdegu-logo {
+    width: 3rem;
+    margin-right: 0.25rem;
+    margin-left: 0.5rem;
+  }
+
+  .is-header-text .title {
+    font-size: 2rem;
+  }
+
+  .hero.is-medium .hero-body {
+    padding: 7rem 4.5rem;
+  }
+}
+
 @media (max-width: 599px) {
   .is-header-text #isdegu-logo {
     width: 3rem;
@@ -207,7 +223,7 @@ html {
 }
 
 .main-content .section-dark.our-work {
-  padding: 120px;
+  padding: 8rem 8rem 9rem 8rem ;
 }
 
 .main-content .section-dark.our-work figure {
@@ -244,7 +260,7 @@ html {
 }
 
 .main-content .section-light {
-  padding: 9rem;
+  padding: 8rem 8rem 9rem 8rem ;
 }
 
 .main-content .section-light.about-us .is-larger {
@@ -371,6 +387,10 @@ html {
   margin-left: 2rem;
 }
 
+#mc-catalogo {
+  padding: 2rem;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 1215px) {
   .main-content .section-light {
     padding: 4rem;
@@ -387,6 +407,21 @@ html {
     font-size: 2.5rem;
     margin-left: 0px;
   }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1215px) {
+  .main-content .section-light {
+    padding: 1rem;
+  }
+
+  .main-content .section-light.about-us .is-larger {
+    font-size: 1.05rem;
+  }
+
+  .main-content .section-light.about-us .right-image img {
+    margin: 20px 0px;
+  }
+
 }
 
 @media (max-width: 599px) {
@@ -520,6 +555,17 @@ html {
   color: var(--redISDEGU)
 }
 
+@media (max-width: 1023px) {
+  .breadcrumb {
+    padding: 1rem;
+    margin-bottom: 0rem !important;
+  }
+
+  #mc-catalogo {
+    padding: 1rem 2rem;
+  }
+}
+
 .main-content .section-light.catalog {
   padding: 0rem 9rem 9rem 9rem;
 }
@@ -527,6 +573,12 @@ html {
 .main-content .catalog .card {
   background-color: var(--redISDEGU);
   color: var(--white);
+}
+
+.main-content .catalog .card:hover p {
+  color: var(--orange);
+  transition: all .2s ease-in-out;
+  border-bottom: 2px solid var(--orange);
 }
 
 .main-content .catalog .card strong {
@@ -550,4 +602,13 @@ html {
   .main-content .section-light.catalog {
     padding: 0rem 1rem 1rem 1rem;
   }
+
+  .main-content .catalog .card-content {
+    padding: 1rem;
+  }
+
+  .main-content .catalog .card-content .content {
+    font-size: 1.2rem;
+  }
+  
 }
