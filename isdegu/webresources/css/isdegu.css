@@ -547,6 +547,16 @@ html {
   }
 }
 
+.navbar-burger {
+  color: var(--white);
+}
+
+#i-mobile-nav {
+  top: 0rem;
+  right: 0.1rem;
+  position: absolute;
+}
+
 .breadcrumb {
   padding: 2rem;
 }
